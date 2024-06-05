@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <title>ONGs - Login</title>
+    <script th:src="@{js/login.js}" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="/home">Eu Ajudo.com</a></div>
+    </nav>
+
+    <main>
+        <div class="formContainer">
+            <form th:action="@{/login}" method="post" id="loginForm">
+                <h2>login</h2>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" name="loginMail" autocomplete="off">
+                    <img th:src=@{/icon/email.svg} alt="ícone de email">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Senha" name="loginPwd" autocomplete="off">
+                    <img th:src="@{/icon/lock.svg}" alt="ícone de cadeado">
+                </div>
+                <button type="submit" class="loginBtn">login</button>
+                <div class="registerLink">
+                    <p>Não tem um conta? <a href="/register" class="redirectToRegisterLink">Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

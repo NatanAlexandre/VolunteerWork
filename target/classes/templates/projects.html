@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link rel="stylesheet" th:href="@{/css/projects.css}">
+    <title>ONGs - Projetos Sociais</title>
+    <script th:src="@{js/projects.js}" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="/project">Eu Ajudo.com</a></div>
+        <ul>
+            <li><a href="/project">Projetos Sociais</a></li>
+            <li><a href="/profile"><button class="profileBtn">Perfil</button></a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Projetos Sociais</h1>
+        <div class="feed" id="divFeed">
+            <div class="ongPost">
+                <div class="ongLocation"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

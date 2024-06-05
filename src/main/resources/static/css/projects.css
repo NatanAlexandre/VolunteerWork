@@ -1,0 +1,72 @@
+main {
+    margin-top: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
+.feed {
+    height: auto;
+}
+
+.ongPost {
+    background: rgba(1, 46, 64, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(18px);
+    border-radius: 0.8em;
+    width: 650px;
+    padding: 50px 50px;
+    margin-top: 30px;
+}
+
+.ongPost h2 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.ongPost .ongLocation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.ongPost .ongLocation h3 {
+    font-size: 2.6em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ongPost p {
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.ongPost button {
+    border: none;
+    padding: 20px 60px;
+    font-size: 2.6em;
+    font-weight: 600;
+    color: white;
+    background-color: #3CA6A6;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    border-radius: 10em;
+    margin-top: 12px;
+    transition: all .3s;
+}
+
+.ongPost button:hover {
+    background-color: #2c7979;
+    transform: translateY(-0.20em);
+    cursor: pointer;
+}

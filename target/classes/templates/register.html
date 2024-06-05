@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+    <title>ONGs - Registro</title>
+    <script th:src="@{/js/register.js}" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="/home">Eu Ajudo.com</a></div>
+    </nav>
+
+    <main>
+        <div class="formContainer">
+            <form th:action="@{/registers}" method="post" id="registerForm">
+                <h2>registro</h2>
+                <div class="inputBox">
+                    <input type="text" placeholder="Nome" name="registerName" autocomplete="off">
+                    <img th:src="@{/icon/user.svg}" alt="ícone de usuário">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" name="registerMail" autocomplete="off">
+                    <img th:src="@{/icon/email.svg}" alt="ícone de email">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Confirmar email" name="registerMailConfirm" autocomplete="off">
+                    <img th:src="@{/icon/email.svg}" alt="ícone de email">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Senha" name="registerPwd" autocomplete="off">
+                    <img th:src="@{/icon/lock.svg}" alt="ícone de cadeado">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Confirmar senha" name="registerPwdConfirm" autocomplete="off">
+                    <img th:src="@{/icon/lock.svg}" alt="ícone de cadeado">
+                </div>
+                <div class="workingOnProject">
+                    <label><input type="checkbox" name="volunteer">Trabalho em uma ONG</label>
+                </div>
+                <div class="inputBox">
+                    <select name="registerOng" id="registerOng"></select>
+                </div>
+                <div class="acceptTerms">
+                    <label><input type="checkbox" name="term">Aceito os <a href="#">termos e condições</a></label>
+                </div>
+                <button type="submit" class="registerBtn">registrar</button>
+                <div class="loginLink">
+                    <p>Já tem uma conta? <a href="/home" class="redirectToLoginLink">Entre</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

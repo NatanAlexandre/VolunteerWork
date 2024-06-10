@@ -1,6 +1,4 @@
-<h2>Volunteer Work</h2>
-<p># Plataforma de Incentivo ao Voluntariado
-
+<h2>Plataforma de Incentivo ao Voluntariado</h2>
 Este é um projeto Java com Spring Boot e Banco de Dados que visa criar uma plataforma para incentivar o voluntariado, onde ONGs podem buscar voluntários, apresentar projetos e deixar inscrições abertas para participação.
 
 ## Tecnologias Utilizadas
